@@ -4,7 +4,7 @@ executors:
   node:
     docker:
       - image: circleci/node:11.10.0
-    working_directory: ~/ERC1820
+    working_directory: ~/ERC2470
 
 commands:
   restore-dependencies:

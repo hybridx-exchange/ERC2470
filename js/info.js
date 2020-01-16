@@ -1,7 +1,7 @@
 
-const ERC1820 = require('../index.js');
+const ERC2470 = require('../index.js');
 
-const res = ERC1820.generateDeployTx();
+const res = ERC2470.generateDeployTx();
 
 console.log("RawTx: ", res.rawTx);
 console.log("Sender: ", res.sender);

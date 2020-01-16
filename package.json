@@ -1,7 +1,7 @@
 {
-  "name": "erc1820",
-  "version": "0.0.2",
-  "description": "ERC1820 - Pseudo-introspection using a registry contract",
+  "name": "erc2470",
+  "version": "0.0.1",
+  "description": "ERC2470 - Singleton Factory",
   "main": "index.js",
   "files": [
     "artifacts",
@@ -22,27 +22,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/0xjac/ERC1820.git"
+    "url": "https://github.com/3esmit/ERC2470.git"
   },
   "keywords": [
     "solidity",
-    "pseudo-introspaection",
-    "ERC672",
-    "ERC820",
-    "ERC820a",
-    "ERC1820",
-    "ERC777",
+    "ERC2470",
     "smart",
     "contract",
-    "reverseENS",
     "ethereum"
   ],
-  "author": "Jordi Baylina, Jacques Dafflon",
+  "author": "Ricardo Guilherme Schmidt, Jordi Baylina, Jacques Dafflon",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/0xjac/ERC1820/issues"
+    "url": "https://github.com/3esmit/ERC2470/issues"
   },
-  "homepage": "https://eips.ethereum.org/EIPS/eip-820",
+  "homepage": "https://eips.ethereum.org/EIPS/eip-2470",
   "dependencies": {
     "ethereumjs-tx": "1.3.7",
     "ethereumjs-util": "6.1.0",
