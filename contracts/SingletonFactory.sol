@@ -21,4 +21,4 @@ contract SingletonFactory {
     }
 }
 // IV is value needed to have a vanity address starting with '0x2470'.
-// IV: 0
+// IV: 21279
