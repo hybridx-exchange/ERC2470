@@ -11,6 +11,17 @@ The address of the factory on **all chains** is:
 
 <h4><pre>0x247034FdD2F7C2Ca1EA5184025904d6D2265b084</pre></h4>
 
+### Vanity Generator for ERC2470 Singletons
+
+Run the following to generate a few vanity "0x1234" addresses of "SingletonExample.sol":
+
+``` shell
+npm run build
+node ./scripts/vanitygen-erc2470.js "0x1234"
+```
+
+The script simply try salts for the bytecode of that example.
+
 ## Compilation & Verification
 
 > :warning: The `solc` compiler version `0.5.11+commit.22be8592` must be present on the build machine. ([More info on installing solc][solc-install].)
