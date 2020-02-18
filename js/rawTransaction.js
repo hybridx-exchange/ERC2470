@@ -7,8 +7,8 @@ const rawTransaction = {
   data: '0x' + contracts.SingletonFactory.SingletonFactory.bin,
   gasLimit: 247000,
   v: 27,
-  r: '0x2470000000000000000000000000000000000000000000000000000000002470',
-  s: '0x2470000000000000000000000000000000000000000000000000000000002470'
+  r: '0x247000',
+  s: '0x2470'
 };
 
 module.exports = rawTransaction;

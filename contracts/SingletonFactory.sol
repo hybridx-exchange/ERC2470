@@ -1,16 +1,17 @@
-pragma solidity 0.5.11;
+pragma solidity 0.6.2;
 
 
 /**
+ * @title Singleton Factory (EIP-2470)
+ * @notice Exposes CREATE2 (EIP-1014) to deploy bytecode on deterministic addresses based on initialization code and salt.
  * @author Ricardo Guilherme Schmidt (Status Research & Development GmbH)
- * @notice Singleton Factory (ERC-2470) deploys deterministic addresses based on it's initialization code.
  */
 contract SingletonFactory {
     /**
-     * @notice Deploys a deterministic address based on `_initCode` and `_salt`.
+     * @notice Deploys `_initCode` using `_salt` for defining the deterministic address.
      * @param _initCode Initialization code.
      * @param _salt Arbitrary value to modify resulting address.
-     * @return Created contract address.
+     * @return createdContract Created contract address.
      */
     function deploy(bytes memory _initCode, bytes32 _salt)
         public
@@ -21,5 +22,5 @@ contract SingletonFactory {
         }
     }
 }
-// IV is value needed to have a vanity address starting with '0x2470'.
-// IV: 3018
+// IV is a value changed to generate the vanity address.
+// IV: 6583047

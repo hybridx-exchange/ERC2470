@@ -6,7 +6,7 @@ const startSalt = (argLen > 3) ? parseInt(process.argv[3]) : 0
 const lookFor = (argLen > 4) ? parseInt(process.argv[4]) : 10;
 
 const prefix = Buffer.from('ff', 'hex');
-const factoryAddress =  ethUtils.toBuffer("0x247087a9061f30de86a9E63B68B4e7d8ebf4A51a");
+const factoryAddress =  ethUtils.toBuffer("0xce0042B868300000d44A59004Da54A005ffdcf9f");
 const bytecode = ethUtils.toBuffer('0x' + require(`../artifacts/combined.json`).contracts['./contracts/SingletonExample.sol:SingletonExample'].bin);
 const _owner = "0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359";
 const initCode = Buffer.concat([bytecode, ethUtils.setLengthLeft(_owner, 32)]);
