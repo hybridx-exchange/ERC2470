@@ -24,7 +24,7 @@ contract ERC2470 {
         address payable createdContract = deploy(msg.data, bytes32(0));
         assembly {
             mstore(0, createdContract)
-			return(0, 32)
+            return(0, 32)
         }
     }
 
