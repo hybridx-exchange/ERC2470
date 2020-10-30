@@ -19,6 +19,7 @@ contract ERC2470 {
 
     /**
      * @notice Fallback forwards `msg.data` with salt `bytes32(0)` to `deploy(bytes,bytes32)`.
+     * @dev Returns address of created contract even for fallback
      */
     fallback() external payable {
         address payable createdContract = deploy(msg.data, bytes32(0));
@@ -68,4 +69,4 @@ contract ERC2470 {
     }
 }
 // IV is a value changed to generate the vanity address.
-// IV: 1689
+// IV: TBD
