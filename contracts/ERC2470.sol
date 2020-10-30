@@ -11,13 +11,6 @@ pragma solidity 0.7.3;
 contract ERC2470 {
 
     /**
-     * @notice Fails on calls with no `msg.data` but with `msg.value`
-     */
-    receive() external payable {
-        revert("ERC2470: bad call");
-    }
-
-    /**
      * @notice Fallback forwards `msg.data` with salt `bytes32(0)` to `deploy(bytes,bytes32)`.
      * @dev Returns address of created contract even for fallback
      */
